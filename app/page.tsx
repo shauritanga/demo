@@ -47,7 +47,7 @@ export default function LoginPage() {
         <div className="w-full max-w-sm space-y-8">
           <div className="flex flex-col items-center text-center">
             <Image
-              src="/djk_logo.png"
+              src="/logo.png"
               alt="Acme"
               width={200}
               height={200}
