@@ -25,6 +25,8 @@ type Permissions = {
   users: PermissionActions;
   transactions: PermissionActions;
   invoices: PermissionActions;
+  clients: PermissionActions;
+  reports: PermissionActions;
   roles: PermissionActions;
 };
 
@@ -37,6 +39,8 @@ export default function RoleForm() {
     users: { create: true, read: true, update: true, delete: false },
     transactions: { create: true, read: true, update: true, delete: false },
     roles: { create: true, read: true, update: true, delete: false },
+    clients: { create: true, read: true, update: true, delete: false },
+    reports: { create: true, read: true, update: true, delete: false },
     invoices: { create: true, read: true, update: true, delete: false },
   });
 

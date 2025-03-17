@@ -53,9 +53,7 @@ export default function LoginPage() {
               height={200}
               className="mb-3"
             />
-            <h2 className="text-xl text-gray-600">
-              Welcome to DJK International
-            </h2>
+            <h2 className="text-xl text-gray-600">Welcome to CMTL Logistics</h2>
           </div>
           {error && <p style={{ color: "red" }}>{error}</p>}
           <form className="space-y-3" onSubmit={handleSubmit}>

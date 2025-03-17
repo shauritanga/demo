@@ -72,17 +72,17 @@ export default function Sidebar() {
           >
             <div className="flex items-center gap-3">
               <Image
-                src="/djk_logo.png"
+                src="/logo.png"
                 alt="Acme"
                 width={100}
-                height={32}
+                height={20}
                 className="flex-shrink-0 hidden dark:block"
               />
               <Image
-                src="/djk_logo.png"
+                src="/logo.png"
                 alt="Acme"
                 width={100}
-                height={66}
+                height={20}
                 className="flex-shrink-0 block dark:hidden"
               />
               {/* <span className="text-lg font-semibold hover:cursor-pointer text-gray-900 dark:text-white">

@@ -7,7 +7,7 @@ import NotistackProvider from "@/lib/NotistackProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "DJK International Dashboard",
+  title: "CTML Logistics Dashboard",
   description: "A modern dashboard with theme switching",
 };
 

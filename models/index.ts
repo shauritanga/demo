@@ -906,6 +906,8 @@ const roleSchema = new Schema({
   permissions: {
     bils: permissionSchema,
     users: permissionSchema,
+    clients: permissionSchema,
+    reports: permissionSchema,
     transactions: permissionSchema,
     invoices: permissionSchema,
     roles: permissionSchema,

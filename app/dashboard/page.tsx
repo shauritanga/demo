@@ -6,7 +6,6 @@ import { WorkProgress } from "@/components/WorkProgress";
 
 export default async function Dashboard() {
   const session = await auth();
-  console.log({ session });
 
   return (
     <div className="w-full mx-auto py-8 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 min-h-screen">

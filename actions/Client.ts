@@ -17,7 +17,7 @@ export async function createClient(
     const session = await auth();
     const user = session?.user;
 
-    await checkPermission(user?.role ?? "USER", "users", "create");
+    await checkPermission(user?.role ?? "USER", "clients", "create");
 
     // Extract data from form
     const name = formData.get("name") as string;
@@ -58,7 +58,7 @@ export async function readClients() {
   const session = await auth();
   const user = session?.user;
 
-  await checkPermission(user?.role ?? "USER", "users", "read");
+  await checkPermission(user?.role ?? "USER", "clients", "read");
 
   // Fetch employee from database
   const employees = await Client.find({});
@@ -70,7 +70,7 @@ export async function readClient(id: number) {
   const session = await auth();
   const user = session?.user;
 
-  await checkPermission(user?.role ?? "USER", "users", "read");
+  await checkPermission(user?.role ?? "USER", "clients", "read");
 
   // Fetch employee from database
   const employee = await User.findById(id);
@@ -87,7 +87,7 @@ export async function updateClient(
     const session = await auth();
     const user = session?.user;
 
-    await checkPermission(user?.role ?? "USER", "users", "update");
+    await checkPermission(user?.role ?? "USER", "clients", "update");
     const data = {
       name: formData.get("name") as string,
       district: formData.get("district") as string,
@@ -117,7 +117,7 @@ export async function deleteClient(id: string) {
     const session = await auth();
     const user = session?.user;
 
-    await checkPermission(user?.role ?? "USER", "users", "delete");
+    await checkPermission(user?.role ?? "USER", "clients", "delete");
 
     // Delete employee from database
     const result = await Client.findByIdAndDelete(id);
